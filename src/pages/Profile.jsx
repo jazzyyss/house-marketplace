@@ -1,8 +1,8 @@
-import React from 'react'
+import Signin from "./Signin"
 
 const Profile = () => {
   return (
-    <div>Profile</div>
+    <Signin />
   )
 }
 
