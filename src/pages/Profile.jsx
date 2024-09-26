@@ -1,8 +1,17 @@
-import Signin from "./Signin"
+import { getAuth, updateProfile } from 'firebase/auth'
+import { useState, useEffect } from 'react'
 
 const Profile = () => {
+  const auth = getAuth()
+
+  const [user, setUser] = useState(null)
+
+  useEffect(()=>{
+    setUser(auth.currentUser)
+  }, [])
+  
   return (
-    <Signin />
+    user ? user.displayName : 'Not logged In'
   )
 }
 
