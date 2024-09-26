@@ -3,6 +3,7 @@ import {Link, useNavigate} from 'react-router-dom'
 import {getAuth, createUserWithEmailAndPassword, updateProfile} from 'firebase/auth'
 import {setDoc, doc, serverTimestamp} from 'firebase/firestore'
 import {db} from '../firebase.config'
+import { toast } from "react-toastify"
 
 import ArrowRightIcon from '../assets/svg/keyboardArrowRightIcon.svg?react'
 import VisibilityIcon from '../assets/svg/visibilityIcon.svg'
@@ -43,7 +44,7 @@ const Signup = () => {
 
       navigate('/')
     }catch(err){
-      console.log(err)
+      toast.error('Something went wrong, try again.')
     }
   }
 
