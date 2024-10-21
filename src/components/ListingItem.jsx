@@ -1,6 +1,5 @@
 import { Link } from 'react-router-dom'
 import DeleteIcon from '../assets/svg/deleteIcon.svg?react'
-import EditIcon from '../assets/svg/editIcon.svg?react'
 import bedIcon from '../assets/svg/bedIcon.svg'
 import bathtubIcon from '../assets/svg/bathtubIcon.svg'
 
